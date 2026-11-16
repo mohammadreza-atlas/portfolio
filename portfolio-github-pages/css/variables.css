@@ -1,0 +1,44 @@
+/* variables.css — Design tokens (colours, type scale, radii, shadows, motion). */
+
+:root {
+    --primary: #c9b9ad;
+    --primary-dark: #b0a095;
+    --secondary: #516a46;
+    --secondary-dark: #3a4d32;
+    --accent: #6a9c73;
+    --accent-dark: #557d5a;
+    --dark: #000000;
+    --dark-light: #1a1a1a;
+    --gray: #64748b;
+    --gray-light: #94a3b8;
+    --white: #ffffff;
+    --text: #ffffff;
+    --success: #10b981;
+    --error: #ef4444;
+
+    --bg: #000000;
+    --bg-elev: #0d0d0d;
+    --bg-card: #141414;
+    --border: rgba(201, 185, 173, 0.12);
+    --border-strong: rgba(201, 185, 173, 0.25);
+
+    --font-fa: "Segoe UI", Tahoma, "Iranian Sans", "B Nazanin", Arial, sans-serif;
+    --font-en: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+
+    --shadow-sm: 0 4px 14px rgba(0,0,0,0.35);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.45);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.55);
+
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-left: env(safe-area-inset-left, 0px);
+    --safe-right: env(safe-area-inset-right, 0px);
+}

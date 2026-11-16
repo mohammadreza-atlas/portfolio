@@ -1,0 +1,53 @@
+/* ---------------------------------------------------------------------------
+   Project details page
+--------------------------------------------------------------------------- */
+
+.pd-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 40px;
+    align-items: start;
+}
+
+.pd-heading { font-size: 1.2rem; margin-bottom: 14px; }
+.pd-text { color: var(--gray-light); line-height: 2; font-size: 1rem; }
+
+.pd-side {
+    padding: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.pd-topics {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.pd-topic {
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.pd-language { font-size: 0.88rem; color: var(--gray-light); margin-bottom: 20px; }
+
+.pd-actions { display: grid; gap: 12px; }
+
+@media (max-width: 900px) {
+    .pd-layout { grid-template-columns: 1fr; }
+}
+
+.pd-sample-badge {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 4px 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: var(--primary);
+}

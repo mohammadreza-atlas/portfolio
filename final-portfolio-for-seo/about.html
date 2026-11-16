@@ -1,0 +1,2881 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#000000" />
+
+<title>درباره محمدرضا سلطانی | توسعه‌دهنده نرم‌افزار</title>
+<meta name="title" content="درباره محمدرضا سلطانی | توسعه‌دهنده نرم‌افزار" />
+<meta name="description" content="درباره محمدرضا سلطانی؛ توسعه‌دهنده Python و علاقه‌مند به طراحی وب، هوش مصنوعی، اینترنت اشیا و بازارهای مالی. مسیری از کنجکاوی تا ساختن محصولات واقعی." />
+<meta name="keywords" content="محمدرضا سلطانی, درباره محمدرضا سلطانی, توسعه دهنده پایتون, برنامه نویس الیگودرز, طراحی سایت الیگودرز" />
+<meta name="author" content="Mohammadreza Soltani" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://mohammadreza-soltani.ir/about.html" />
+
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://mohammadreza-soltani.ir/about.html" />
+<meta property="og:title" content="درباره محمدرضا سلطانی | توسعه‌دهنده نرم‌افزار" />
+<meta property="og:description" content="مسیر یادگیری، علایق و رویکرد محمدرضا سلطانی به برنامه‌نویسی و توسعه نرم‌افزار." />
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:site_name" content="محمدرضا سلطانی" />
+<meta property="profile:first_name" content="Mohammadreza" />
+<meta property="profile:last_name" content="Soltani" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://mohammadreza-soltani.ir/about.html" />
+<meta name="twitter:title" content="درباره محمدرضا سلطانی" />
+<meta name="twitter:description" content="مسیر یادگیری، علایق و رویکرد محمدرضا سلطانی به برنامه‌نویسی." />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "محمدرضا سلطانی",
+  "alternateName": "Mohammadreza Soltani",
+  "jobTitle": "Python Developer",
+  "url": "https://mohammadreza-soltani.ir/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "الیگودرز",
+    "addressCountry": "IR"
+  },
+  "sameAs": ["https://github.com/mohammadreza-atlas"],
+  "knowsAbout": ["Python", "Go", "Web Development", "Artificial Intelligence", "IoT", "Financial Markets", "Data Analysis"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "خانه", "item": "https://mohammadreza-soltani.ir/" },
+    { "@type": "ListItem", "position": 2, "name": "درباره من", "item": "https://mohammadreza-soltani.ir/about.html" }
+  ]
+}
+</script>
+
+<style>
+/* ============================================
+   1) Design Tokens (مشترک با Home و Projects)
+============================================ */
+:root {
+    --primary: #c9b9ad;
+    --primary-dark: #b0a095;
+    --secondary: #516a46;
+    --secondary-dark: #3a4d32;
+    --accent: #6a9c73;
+    --accent-dark: #557d5a;
+    --dark: #000000;
+    --dark-light: #1a1a1a;
+    --gray: #64748b;
+    --gray-light: #94a3b8;
+    --white: #ffffff;
+    --text: #ffffff;
+    --success: #10b981;
+    --error: #ef4444;
+
+    --bg: #000000;
+    --bg-elev: #0d0d0d;
+    --bg-card: #141414;
+    --border: rgba(201, 185, 173, 0.12);
+    --border-strong: rgba(201, 185, 173, 0.25);
+
+    --font-fa: "Segoe UI", Tahoma, "Iranian Sans", "B Nazanin", Arial, sans-serif;
+    --font-en: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+
+    --shadow-sm: 0 4px 14px rgba(0,0,0,0.35);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.45);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.55);
+
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-left: env(safe-area-inset-left, 0px);
+    --safe-right: env(safe-area-inset-right, 0px);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+    font-family: var(--font-fa);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: var(--safe-top);
+    padding-bottom: var(--safe-bottom);
+    padding-left: var(--safe-left);
+    padding-right: var(--safe-right);
+}
+
+html[dir="ltr"] body { font-family: var(--font-en); }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -20%;
+    left: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(106, 156, 115, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    bottom: -20%;
+    right: -10%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(201, 185, 173, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+ul { list-style: none; }
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+section { padding: 80px 0; position: relative; }
+
+.section-title {
+    font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 14px;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+    font-size: clamp(0.9rem, 1.4vw, 1rem);
+    color: var(--gray-light);
+    max-width: 640px;
+    margin-bottom: 44px;
+    line-height: 1.8;
+}
+
+.section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 14px;
+    letter-spacing: 0.02em;
+}
+
+.section-eyebrow::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: var(--accent);
+}
+
+.section-header-center { text-align: center; max-width: 720px; margin: 0 auto 48px; }
+.section-header-center .section-eyebrow { justify-content: center; }
+.section-header-center .section-subtitle { margin-inline: auto; }
+
+.sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ============================================
+   2) Buttons
+============================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all var(--transition);
+    cursor: pointer;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary { background: var(--accent); color: var(--dark); font-weight: 600; }
+.btn-primary:hover { background: var(--accent-dark); color: var(--white); transform: translateY(-2px); box-shadow: 0 10px 25px rgba(106, 156, 115, 0.3); }
+
+.btn-secondary { background: transparent; color: var(--white); border-color: var(--border-strong); }
+.btn-secondary:hover { background: rgba(255,255,255,0.05); border-color: var(--primary); transform: translateY(-2px); }
+
+.btn-sm { padding: 9px 15px; font-size: 0.8rem; }
+
+.btn svg { width: 14px; height: 14px; transition: transform var(--transition); }
+html[dir="rtl"] .btn-arrow svg { transform: rotate(180deg); }
+.btn:hover .btn-arrow svg { transform: translateX(4px); }
+html[dir="rtl"] .btn:hover .btn-arrow svg { transform: rotate(180deg) translateX(4px); }
+
+/* ============================================
+   3) Header (مشترک با Home و Projects)
+============================================ */
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 16px 0;
+    transition: all var(--transition);
+    background: transparent;
+    padding-top: calc(16px + var(--safe-top));
+}
+
+.header.scrolled {
+    padding: 12px 0;
+    padding-top: calc(12px + var(--safe-top));
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity var(--transition);
+}
+
+.logo:hover { opacity: 0.8; }
+
+.logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 0.85rem;
+    font-family: var(--font-en);
+    letter-spacing: -0.05em;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-mark::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.2) 50%, transparent 60%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.logo:hover .logo-mark::after { transform: translateX(100%); }
+
+.nav { display: flex; align-items: center; gap: 8px; }
+.nav-list { display: flex; align-items: center; gap: 4px; }
+
+.nav-link {
+    padding: 8px 14px;
+    font-size: 0.88rem;
+    color: var(--gray-light);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+    position: relative;
+}
+
+.nav-link:hover { color: var(--white); background: rgba(255,255,255,0.04); }
+.nav-link.active { color: var(--white); }
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.header-actions { display: flex; align-items: center; gap: 8px; }
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 4px;
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: var(--font-en);
+}
+
+.lang-btn { padding: 5px 9px; border-radius: 5px; color: var(--gray-light); transition: all var(--transition); }
+.lang-btn.active { background: var(--accent); color: var(--dark); }
+.lang-btn:hover:not(.active) { color: var(--white); }
+
+.header-cta { padding: 8px 16px; font-size: 0.82rem; }
+
+.menu-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    transition: all var(--transition);
+}
+
+.menu-toggle:hover { background: rgba(255,255,255,0.08); }
+
+.menu-toggle span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    position: relative;
+    transition: all var(--transition);
+}
+
+.menu-toggle span::before,
+.menu-toggle span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all var(--transition);
+}
+
+.menu-toggle span::before { top: -5px; }
+.menu-toggle span::after { top: 5px; }
+
+.menu-toggle.open span { background: transparent; }
+.menu-toggle.open span::before { top: 0; transform: rotate(45deg); }
+.menu-toggle.open span::after { top: 0; transform: rotate(-45deg); }
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: calc(68px + var(--safe-top));
+    left: 0; right: 0;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 20px;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition);
+    z-index: 99;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+
+.mobile-nav-list { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+
+.mobile-nav-link {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    color: var(--gray-light);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+    display: block;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active { color: var(--white); background: rgba(255,255,255,0.04); }
+
+.mobile-nav-cta { width: 100%; justify-content: center; }
+
+/* ============================================
+   4) About Hero
+============================================ */
+.about-hero { padding: 130px 0 40px; position: relative; overflow: hidden; }
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: var(--gray);
+    margin-bottom: 18px;
+}
+
+.breadcrumb a { color: var(--gray-light); transition: color var(--transition); }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb svg { width: 12px; height: 12px; }
+html[dir="rtl"] .breadcrumb svg { transform: rotate(180deg); }
+
+.about-hero h1 {
+    font-size: clamp(1.85rem, 4.2vw, 3rem);
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--white);
+    margin-bottom: 18px;
+    letter-spacing: -0.02em;
+}
+
+.about-hero h1 .highlight {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.about-hero-description {
+    font-size: clamp(0.92rem, 1.3vw, 1.05rem);
+    color: var(--gray-light);
+    line-height: 1.9;
+    margin-bottom: 26px;
+    max-width: 560px;
+}
+
+.hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: rgba(106, 156, 115, 0.08);
+    border: 1px solid rgba(106, 156, 115, 0.2);
+    font-size: 0.78rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hero-eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.about-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* About Hero Visual — آواتار انتزاعی */
+.about-visual {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    margin-inline-start: auto;
+    width: 100%;
+}
+
+.about-visual-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-ring {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(106, 156, 115, 0.18) 0%, rgba(201, 185, 173, 0.1) 100%);
+    border: 1px solid var(--border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatar-ring::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0deg, var(--accent) 60deg, transparent 180deg, var(--primary) 270deg, transparent 360deg);
+    opacity: 0.35;
+    animation: rotate 14s linear infinite;
+    mask: radial-gradient(circle, transparent 55%, #000 56%);
+    -webkit-mask: radial-gradient(circle, transparent 55%, #000 56%);
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.avatar-initials {
+    position: relative;
+    z-index: 2;
+    font-family: var(--font-en);
+    font-size: clamp(3.5rem, 9vw, 5.5rem);
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    line-height: 1;
+    user-select: none;
+}
+
+.avatar-initials::after {
+    content: "MS";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: blur(28px);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.visual-network {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.55;
+}
+
+.visual-network circle { fill: var(--accent); }
+.visual-network line { stroke: var(--accent); stroke-width: 0.5; opacity: 0.3; }
+
+.floating-card {
+    position: absolute;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-card .icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.floating-card .icon svg { width: 15px; height: 15px; }
+.floating-card .fc-title { font-weight: 600; }
+.floating-card .fc-sub { font-size: 0.68rem; color: var(--gray-light); }
+
+.floating-card-1 { top: 6%; left: 2%; animation-delay: 0s; }
+.floating-card-2 { bottom: 14%; right: 0; animation-delay: 2.5s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.terminal {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 210px;
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    direction: ltr;
+}
+
+html[dir="ltr"] .terminal { left: auto; right: -10px; }
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.03);
+    border-bottom: 1px solid var(--border);
+}
+
+.terminal-dot { width: 8px; height: 8px; border-radius: 50%; }
+.terminal-dot.red { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27c93f; }
+
+.terminal-title { margin-inline-start: 6px; color: var(--gray-light); font-size: 0.68rem; }
+.terminal-body { padding: 12px; color: var(--gray-light); line-height: 1.8; text-align: left; }
+.terminal-line { display: block; }
+.terminal-keyword { color: var(--primary); }
+.terminal-string { color: #e6b673; }
+.terminal-comment { color: var(--gray); font-style: italic; }
+
+.terminal-cursor {
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    background: var(--accent);
+    animation: blink 1s infinite;
+    vertical-align: middle;
+    margin-inline-start: 2px;
+}
+
+@keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+
+/* ============================================
+   5) Story Section
+============================================ */
+.story-section { padding: 60px 0; }
+
+.story-card {
+    background: linear-gradient(135deg, rgba(81, 106, 70, 0.08) 0%, rgba(201, 185, 173, 0.04) 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: clamp(28px, 5vw, 50px);
+    position: relative;
+    overflow: hidden;
+}
+
+.story-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(106, 156, 115, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+html[dir="rtl"] .story-card::before { right: auto; left: 0; }
+
+.story-content { position: relative; max-width: 820px; }
+
+.story-content p {
+    font-size: clamp(0.92rem, 1.2vw, 1.02rem);
+    color: var(--gray-light);
+    line-height: 2;
+    margin-bottom: 16px;
+}
+
+.story-content p:last-child { margin-bottom: 0; }
+.story-content strong { color: var(--white); font-weight: 600; }
+
+.story-quote {
+    margin-top: 26px;
+    padding: 18px 22px;
+    border-inline-start: 3px solid var(--accent);
+    background: rgba(106, 156, 115, 0.05);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-style: italic;
+    color: var(--primary);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* ============================================
+   6) Approach Section
+============================================ */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.approach-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 28px 24px;
+    transition: all var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.approach-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition);
+}
+
+html[dir="rtl"] .approach-card::before { transform-origin: right; }
+
+.approach-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+}
+
+.approach-card:hover::before { transform: scaleX(1); }
+
+.approach-number {
+    font-family: var(--font-en);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.approach-number::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: var(--accent);
+}
+
+.approach-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: rgba(106, 156, 115, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: var(--accent);
+    transition: all var(--transition);
+}
+
+.approach-card:hover .approach-icon {
+    background: rgba(106, 156, 115, 0.15);
+    transform: scale(1.05);
+}
+
+.approach-icon svg { width: 22px; height: 22px; }
+
+.approach-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.approach-desc {
+    font-size: 0.88rem;
+    color: var(--gray-light);
+    line-height: 1.85;
+}
+
+/* ============================================
+   7) Technologies & Interests
+============================================ */
+.tech-interests-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+@media (max-width: 768px) {
+    .tech-interests-grid { grid-template-columns: 1fr; }
+}
+
+.tech-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 26px;
+    transition: all var(--transition);
+}
+
+.tech-block:hover { border-color: var(--border-strong); }
+
+.tech-block-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tech-block-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    background: rgba(106, 156, 115, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+}
+
+.tech-block-icon svg { width: 18px; height: 18px; }
+
+.tech-block-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.tech-list { display: flex; flex-direction: column; gap: 8px; }
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,0.02);
+    border: 1px solid transparent;
+    transition: all var(--transition);
+}
+
+.tech-item:hover {
+    border-color: var(--border);
+    background: rgba(255,255,255,0.04);
+    transform: translateX(-4px);
+}
+
+html[dir="ltr"] .tech-item:hover { transform: translateX(4px); }
+
+.tech-item-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background: rgba(106, 156, 115, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.tech-item-icon svg { width: 15px; height: 15px; }
+
+.tech-item-info { flex-grow: 1; min-width: 0; }
+
+.tech-item-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+
+.tech-item-note {
+    font-size: 0.75rem;
+    color: var(--gray-light);
+}
+
+.tech-item-note.learning {
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tech-item-note.learning::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary);
+    animation: pulse 2s infinite;
+}
+
+/* ============================================
+   8) Featured Projects (Compact)
+============================================ */
+.mini-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.mini-project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 18px;
+    transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mini-project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+}
+
+.mini-project-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mini-project-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    background: rgba(201, 185, 173, 0.08);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.mini-project-icon svg { width: 16px; height: 16px; }
+
+.mini-project-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.mini-project-desc {
+    font-size: 0.82rem;
+    color: var(--gray-light);
+    line-height: 1.7;
+}
+
+.mini-project-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.mini-project-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: var(--gray-light);
+    font-family: var(--font-en);
+}
+
+.lang-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+
+.mini-project-link {
+    font-size: 0.8rem;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color var(--transition);
+}
+
+.mini-project-link:hover { color: var(--primary); }
+.mini-project-link svg { width: 12px; height: 12px; }
+html[dir="rtl"] .mini-project-link svg { transform: rotate(180deg); }
+
+.view-all-wrap { text-align: center; }
+
+/* ============================================
+   9) Future Direction
+============================================ */
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+}
+
+.future-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    transition: all var(--transition);
+}
+
+.future-item:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-3px);
+}
+
+.future-marker {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(201, 185, 173, 0.08);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    flex-shrink: 0;
+    font-family: var(--font-en);
+    font-weight: 700;
+    font-size: 0.82rem;
+}
+
+.future-text {
+    font-size: 0.9rem;
+    color: var(--gray-light);
+    line-height: 1.75;
+    padding-top: 4px;
+}
+
+/* ============================================
+   10) Personal Philosophy (بخش شاخص)
+============================================ */
+.philosophy-section { padding: 80px 0; }
+
+.philosophy-card {
+    position: relative;
+    padding: clamp(40px, 6vw, 80px) clamp(24px, 5vw, 60px);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-align: center;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(106, 156, 115, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(201, 185, 173, 0.12) 0%, transparent 55%),
+        linear-gradient(135deg, rgba(81, 106, 70, 0.12) 0%, rgba(20, 20, 20, 0.6) 100%);
+    border: 1px solid var(--border-strong);
+}
+
+.philosophy-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+    pointer-events: none;
+}
+
+.philosophy-content { position: relative; max-width: 760px; margin: 0 auto; }
+
+.philosophy-mark {
+    font-family: var(--font-en);
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 1;
+    color: var(--accent);
+    opacity: 0.3;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.philosophy-text {
+    font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--white);
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+}
+
+.philosophy-text .accent-word {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 700;
+}
+
+.philosophy-divider {
+    width: 50px;
+    height: 2px;
+    background: var(--accent);
+    margin: 0 auto 24px;
+    border-radius: 2px;
+}
+
+.philosophy-translation {
+    font-size: clamp(0.88rem, 1.2vw, 1rem);
+    color: var(--gray-light);
+    line-height: 1.85;
+    font-style: italic;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+html[dir="ltr"] .philosophy-translation { font-style: normal; }
+
+/* ============================================
+   11) CTA (مشترک با صفحات قبلی)
+============================================ */
+.contact-preview { padding: 60px 0 80px; }
+
+.contact-card-main {
+    background: linear-gradient(135deg, rgba(81, 106, 70, 0.15) 0%, rgba(201, 185, 173, 0.08) 100%);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    padding: clamp(36px, 5vw, 70px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card-main::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(106, 156, 115, 0.2) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.contact-content { position: relative; max-width: 640px; margin: 0 auto; }
+
+.contact-card-main h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 16px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+.contact-card-main p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: var(--gray-light);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.contact-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+
+/* ============================================
+   12) Modal + Toast (مشترک)
+============================================ */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition);
+}
+
+.modal-overlay.open { opacity: 1; visibility: visible; }
+
+.modal {
+    background: var(--bg-elev);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    max-width: 520px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: translateY(20px) scale(0.98);
+    transition: transform var(--transition);
+}
+
+.modal-overlay.open .modal { transform: translateY(0) scale(1); }
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-title { font-size: 1.15rem; font-weight: 600; color: var(--white); }
+
+.modal-close {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-light);
+    transition: all var(--transition);
+    background: rgba(255,255,255,0.04);
+}
+
+.modal-close:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+.modal-close svg { width: 18px; height: 18px; }
+
+.modal-body { padding: 20px 24px; }
+.modal-intro { font-size: 0.88rem; color: var(--gray-light); line-height: 1.8; margin-bottom: 20px; }
+
+.contact-methods-list { display: flex; flex-direction: column; gap: 10px; }
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: all var(--transition);
+}
+
+.contact-method:hover { border-color: var(--border-strong); background: rgba(255,255,255,0.02); }
+
+.contact-method-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(106, 156, 115, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.contact-method-icon svg { width: 20px; height: 20px; }
+.contact-method-info { flex-grow: 1; min-width: 0; }
+
+.contact-method-label {
+    font-size: 0.75rem;
+    color: var(--gray-light);
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-method-value {
+    font-size: 0.92rem;
+    color: var(--white);
+    font-weight: 500;
+    word-break: break-all;
+    font-family: var(--font-en);
+    direction: ltr;
+    text-align: start;
+}
+
+.contact-method-action {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-light);
+    transition: all var(--transition);
+    flex-shrink: 0;
+}
+
+.contact-method-action:hover { color: var(--accent); background: rgba(106, 156, 115, 0.1); }
+.contact-method-action svg { width: 16px; height: 16px; }
+.contact-method-action.copied { color: var(--success); }
+
+.modal-footer { padding: 16px 24px 22px; border-top: 1px solid var(--border); text-align: center; }
+.modal-footer-text { font-size: 0.8rem; color: var(--gray); font-style: italic; }
+
+.toast {
+    position: fixed;
+    bottom: calc(30px + var(--safe-bottom));
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--bg-elev);
+    border: 1px solid var(--accent);
+    color: var(--white);
+    padding: 12px 22px;
+    border-radius: var(--radius-md);
+    font-size: 0.88rem;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toast.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+.toast svg { width: 16px; height: 16px; color: var(--success); }
+
+/* ============================================
+   13) Footer (مشترک)
+============================================ */
+.footer { padding: 50px 0 24px; border-top: 1px solid var(--border); background: var(--bg-elev); }
+
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 40px; }
+
+.footer-brand { max-width: 300px; }
+.footer-brand .logo { margin-bottom: 14px; }
+.footer-brand p { font-size: 0.85rem; color: var(--gray-light); line-height: 1.8; margin-bottom: 16px; }
+
+.footer-social { display: flex; gap: 8px; }
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-light);
+    transition: all var(--transition);
+}
+
+.social-link:hover { color: var(--white); background: rgba(255,255,255,0.08); border-color: var(--border-strong); transform: translateY(-2px); }
+.social-link svg { width: 15px; height: 15px; }
+
+.footer-col-title { font-size: 0.85rem; font-weight: 600; color: var(--white); margin-bottom: 14px; }
+.footer-links { display: flex; flex-direction: column; gap: 8px; }
+.footer-link { font-size: 0.85rem; color: var(--gray-light); transition: color var(--transition); text-align: start; }
+.footer-link:hover { color: var(--accent); }
+
+.footer-bottom {
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.footer-copyright { font-size: 0.8rem; color: var(--gray-light); }
+.footer-tagline { font-size: 0.8rem; color: var(--gray); font-style: italic; }
+
+/* ============================================
+   14) Back to top + Reveal
+============================================ */
+.back-to-top {
+    position: fixed;
+    bottom: calc(24px + var(--safe-bottom));
+    right: calc(24px + var(--safe-right));
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all var(--transition);
+    z-index: 50;
+}
+
+html[dir="rtl"] .back-to-top { right: auto; left: calc(24px + var(--safe-left)); }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--accent-dark); color: var(--white); transform: translateY(-4px); }
+.back-to-top svg { width: 18px; height: 18px; }
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+
+/* ============================================
+   15) Responsive
+============================================ */
+@media (max-width: 1024px) {
+    .about-hero-grid { grid-template-columns: 1fr; gap: 44px; }
+    .about-visual { max-width: 340px; margin-inline: auto; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .footer-brand { grid-column: span 2; max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+    section { padding: 60px 0; }
+    .container { padding: 0 18px; }
+    .nav, .header-cta { display: none; }
+    .menu-toggle { display: flex; }
+    .mobile-nav { display: block; }
+
+    .about-hero { padding: 100px 0 30px; }
+
+    .terminal { width: 175px; bottom: -6px; left: -6px; }
+    html[dir="ltr"] .terminal { right: -6px; left: auto; }
+    .terminal-body { padding: 10px; font-size: 0.62rem; }
+
+    .floating-card { font-size: 0.7rem; padding: 8px 11px; }
+    .floating-card .icon { width: 24px; height: 24px; }
+    .floating-card .icon svg { width: 13px; height: 13px; }
+
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .footer-brand { grid-column: auto; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+
+    .back-to-top { bottom: calc(16px + var(--safe-bottom)); right: calc(16px + var(--safe-right)); width: 40px; height: 40px; }
+    html[dir="rtl"] .back-to-top { left: calc(16px + var(--safe-left)); }
+
+    .modal { max-height: 85vh; }
+    .modal-header { padding: 18px 20px; }
+    .modal-body { padding: 16px 20px; }
+    .modal-footer { padding: 14px 20px 18px; }
+    .contact-method { padding: 12px 14px; gap: 12px; }
+    .contact-method-icon { width: 36px; height: 36px; }
+    .contact-method-icon svg { width: 18px; height: 18px; }
+    .contact-method-value { font-size: 0.85rem; }
+
+    .philosophy-section { padding: 60px 0; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 16px; }
+    .about-hero-actions { flex-direction: column; width: 100%; }
+    .about-hero-actions .btn { width: 100%; }
+    .mini-projects-grid { grid-template-columns: 1fr; }
+    .mini-project-card { padding: 16px; }
+    .avatar-initials { font-size: 3rem; }
+    .contact-card-main { padding: 30px 20px; }
+    .contact-buttons { flex-direction: column; }
+    .contact-buttons .btn { width: 100%; }
+    .hero-eyebrow { font-size: 0.72rem; padding: 5px 12px; }
+    .section-eyebrow { font-size: 0.75rem; }
+    .story-card { padding: 24px 18px; }
+    .story-content p { font-size: 0.88rem; line-height: 1.9; }
+    .approach-card { padding: 22px 20px; }
+    .tech-block { padding: 22px 18px; }
+    .modal-overlay { padding: 12px; align-items: flex-end; }
+    .modal { border-radius: var(--radius-lg) var(--radius-lg) 0 0; max-height: 90vh; transform: translateY(100%); }
+    .modal-overlay.open .modal { transform: translateY(0); }
+}
+
+@media (max-width: 360px) {
+    .container { padding: 0 14px; }
+    .about-hero h1 { font-size: 1.55rem; }
+    .terminal { width: 150px; }
+    .floating-card-2 { display: none; }
+    .future-item { padding: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+}
+
+::selection { background: var(--accent); color: var(--dark); }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--secondary-dark); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--secondary); }
+
+body.modal-open { overflow: hidden; }
+</style>
+</head>
+<body>
+
+<!-- ============================================
+     HEADER
+============================================ -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo" data-i18n-aria="aria.home">
+                <span class="logo-mark">MR</span>
+                <span data-i18n="brand">محمدرضا سلطانی</span>
+            </a>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">خانه</a></li>
+                    <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">پروژه‌ها</a></li>
+                    <li><a href="about.html" class="nav-link active" aria-current="page" data-i18n="nav.about">درباره من</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="nav.services">خدمات</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">تماس با من</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-switch" role="group" aria-label="Language switcher">
+                    <button class="lang-btn active" data-lang="fa" aria-label="فارسی">FA</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                </div>
+                <button class="btn btn-primary header-cta" data-i18n="header.cta" onclick="openContactModal()">ارتباط با من</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link" data-i18n="nav.home">خانه</a></li>
+            <li><a href="projects.html" class="mobile-nav-link" data-i18n="nav.projects">پروژه‌ها</a></li>
+            <li><a href="about.html" class="mobile-nav-link active" aria-current="page" data-i18n="nav.about">درباره من</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-i18n="nav.services">خدمات</a></li>
+            <li><a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">تماس با من</a></li>
+        </ul>
+        <button class="btn btn-primary mobile-nav-cta" data-i18n="header.cta" onclick="openContactModal()">ارتباط با من</button>
+    </nav>
+</header>
+
+<main>
+
+<!-- ============================================
+     ABOUT HERO
+============================================ -->
+<section class="about-hero" id="top">
+    <div class="container">
+        <div class="about-hero-grid">
+            <div>
+                <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+                    <a href="index.html" data-i18n="nav.home">خانه</a>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                    <span data-i18n="nav.about">درباره من</span>
+                </nav>
+
+                <div class="hero-eyebrow reveal reveal-delay-1">
+                    <span class="dot"></span>
+                    <span data-i18n="hero.eyebrow">مسیر یادگیری و ساختن</span>
+                </div>
+
+                <h1 class="reveal reveal-delay-1">
+                    <span data-i18n="hero.title1">پشت هر خط کد، </span>
+                    <span class="highlight" data-i18n="hero.titleHighlight">یک مسیر یادگیری</span>
+                    <span data-i18n="hero.title2"> وجود دارد.</span>
+                </h1>
+
+                <p class="about-hero-description reveal reveal-delay-2" data-i18n="hero.description">
+                    من <strong style="color: var(--white);">محمدرضا سلطانی</strong> هستم؛ علاقه‌مند به برنامه‌نویسی، فناوری و ساخت راهکارهایی که بتوانند مسائل واقعی را حل کنند. مسیر من در دنیای توسعه نرم‌افزار با کنجکاوی، تجربه کردن و یادگیری مداوم شکل گرفته است.
+                </p>
+
+                <div class="about-hero-actions reveal reveal-delay-3">
+                    <a href="projects.html" class="btn btn-primary btn-arrow">
+                        <span data-i18n="hero.btn1">مشاهده پروژه‌ها</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <button class="btn btn-secondary" onclick="openContactModal()" data-i18n="hero.btn2">ارتباط با من</button>
+                </div>
+            </div>
+
+            <div class="about-visual reveal reveal-delay-2" aria-hidden="true">
+                <div class="about-visual-inner">
+                    <svg class="visual-network" viewBox="0 0 500 500">
+                        <line x1="90" y1="120" x2="250" y2="210"/>
+                        <line x1="250" y1="210" x2="410" y2="140"/>
+                        <line x1="250" y1="210" x2="340" y2="360"/>
+                        <line x1="90" y1="120" x2="150" y2="320"/>
+                        <line x1="150" y1="320" x2="340" y2="360"/>
+                        <line x1="410" y1="140" x2="340" y2="360"/>
+                        <circle cx="90" cy="120" r="4"/>
+                        <circle cx="250" cy="210" r="5"/>
+                        <circle cx="410" cy="140" r="4"/>
+                        <circle cx="150" cy="320" r="4"/>
+                        <circle cx="340" cy="360" r="5"/>
+                    </svg>
+
+                    <div class="avatar-ring">
+                        <div class="avatar-initials">MS</div>
+                    </div>
+
+                    <div class="floating-card floating-card-1">
+                        <div class="icon" style="background: rgba(106, 156, 115, 0.15); color: var(--accent);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <div>
+                            <div class="fc-title">Python</div>
+                            <div class="fc-sub" data-i18n="hero.card1.sub">زبان اصلی</div>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-2">
+                        <div class="icon" style="background: rgba(201, 185, 173, 0.15); color: var(--primary);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div>
+                            <div class="fc-title">Go</div>
+                            <div class="fc-sub" data-i18n="hero.card2.sub">در حال یادگیری</div>
+                        </div>
+                    </div>
+
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">about.py</span>
+                        </div>
+                        <div class="terminal-body">
+                            <span class="terminal-line"><span class="terminal-comment"># who am I?</span></span>
+                            <span class="terminal-line"><span class="terminal-keyword">class</span> Developer:</span>
+                            <span class="terminal-line">&nbsp;&nbsp;curious = <span class="terminal-string">True</span></span>
+                            <span class="terminal-line">&nbsp;&nbsp;learning = <span class="terminal-string">"always"</span><span class="terminal-cursor"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     MY STORY
+============================================ -->
+<section class="story-section" id="story">
+    <div class="container">
+        <div class="story-card reveal">
+            <div class="story-content">
+                <span class="section-eyebrow" data-i18n="story.eyebrow">داستان من</span>
+                <h2 class="section-title" data-i18n="story.title">از کنجکاوی تا ساختن</h2>
+
+                <p data-i18n="story.p1">
+                    مسیر من در دنیای برنامه‌نویسی با یک سؤال ساده شروع شد: <strong>«چطور می‌شود چیزی که در ذهن دارم را به چیزی واقعی تبدیل کنم؟»</strong> از همان لحظه، علاقه‌ام به دنیای فناوری شکل گرفت و کم‌کم فهمیدم که برنامه‌نویسی برای من فقط نوشتن کد نیست؛ بلکه راهی است برای فکر کردن، مسئله را فهمیدن و ساختن چیزی که واقعاً کار کند.
+                </p>
+
+                <p data-i18n="story.p2">
+                    در این مسیر، تمرکزم را روی <strong>Python</strong> گذاشتم چون زبانی بود که هم قدرتمند بود و هم برای شروع مناسب. در کنار آن، <strong>HTML، CSS و JavaScript</strong> را یاد گرفتم تا بتوانم ایده‌هایم را به شکل وب‌سایت و رابط کاربری پیاده کنم. الان هم در حال یادگیری <strong>Go</strong> هستم، چون دوست دارم دیدم نسبت به برنامه‌نویسی گسترده‌تر شود.
+                </p>
+
+                <p data-i18n="story.p3">
+                    برای من، مهم‌تر از هر چیز این است که مفاهیم را عمیق بفهمم. کپی کردن کد از اینترنت شاید سریع جواب بدهد، اما تا وقتی منطق پشت آن را نفهمم، احساس می‌کنم چیزی را از دست داده‌ام. به همین دلیل، هر پروژه‌ای که می‌سازم، برایم یک آزمایش است؛ جایی که می‌توانم یاد بگیرم، اشتباه کنم و دوباره بسازم.
+                </p>
+
+                <div class="story-quote" data-i18n="story.quote">
+                    «هدف من این نیست که همه‌چیز را بلد باشم؛ هدفم این است که هر روز کمی بهتر از دیروزم باشم و چیزی بسازم که برای کسی مفید باشد.»
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     MY APPROACH
+============================================ -->
+<section class="approach-section" id="approach">
+    <div class="container">
+        <div class="section-header-center reveal">
+            <span class="section-eyebrow" data-i18n="approach.eyebrow">نگرش من</span>
+            <h2 class="section-title" data-i18n="approach.title">چگونه به برنامه‌نویسی نگاه می‌کنم</h2>
+            <p class="section-subtitle" data-i18n="approach.subtitle">چهار اصل ساده که مسیر یادگیری و ساختن من را شکل می‌دهند.</p>
+        </div>
+
+        <div class="approach-grid">
+            <article class="approach-card reveal">
+                <div class="approach-number">01</div>
+                <div class="approach-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h3 class="approach-title" data-i18n="approach.card1.title">اول فهمیدن، بعد نوشتن</h3>
+                <p class="approach-desc" data-i18n="approach.card1.desc">قبل از نوشتن کد، تلاش می‌کنم مسئله و منطق پشت آن را بفهمم. وقتی صورت‌مسئله روشن باشد، راه‌حل خودش کم‌کم پیدا می‌شود.</p>
+            </article>
+
+            <article class="approach-card reveal reveal-delay-1">
+                <div class="approach-number">02</div>
+                <div class="approach-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h3 class="approach-title" data-i18n="approach.card2.title">یادگیری با ساختن</h3>
+                <p class="approach-desc" data-i18n="approach.card2.desc">یادگیری زمانی ارزشمندتر می‌شود که بتوانم آن را در یک پروژه واقعی آزمایش کنم. ساختن، بهترین راه برای فهمیدن عمیق مفاهیم است.</p>
+            </article>
+
+            <article class="approach-card reveal reveal-delay-2">
+                <div class="approach-number">03</div>
+                <div class="approach-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3 class="approach-title" data-i18n="approach.card3.title">استمرار، مهم‌تر از سرعت</h3>
+                <p class="approach-desc" data-i18n="approach.card3.desc">پیشرفت حاصل قدم‌های کوچک و استمرار در مسیر است. مهم نیست چقدر آرام حرکت می‌کنم، مهم این است که متوقف نشوم.</p>
+            </article>
+
+            <article class="approach-card reveal reveal-delay-3">
+                <div class="approach-number">04</div>
+                <div class="approach-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <h3 class="approach-title" data-i18n="approach.card4.title">همیشه در حال کشف</h3>
+                <p class="approach-desc" data-i18n="approach.card4.desc">دنیای فناوری هیچ‌وقت تمام نمی‌شود. همیشه حوزه‌ها و فناوری‌های جدیدی برای یادگیری وجود دارند و من دوست دارم کنجکاوم باقی بماند.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     TECHNOLOGIES & INTERESTS
+============================================ -->
+<section class="tech-section" id="tech">
+    <div class="container">
+        <div class="section-header-center reveal">
+            <span class="section-eyebrow" data-i18n="tech.eyebrow">فناوری‌ها و علایق</span>
+            <h2 class="section-title" data-i18n="tech.title">ابزارها و حوزه‌هایی که با آن‌ها کار می‌کنم</h2>
+            <p class="section-subtitle" data-i18n="tech.subtitle">فناوری‌هایی که در پروژه‌هایم استفاده می‌کنم و حوزه‌هایی که به آن‌ها علاقه دارم.</p>
+        </div>
+
+        <div class="tech-interests-grid">
+            <!-- Technologies -->
+            <div class="tech-block reveal">
+                <div class="tech-block-head">
+                    <div class="tech-block-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3 class="tech-block-title" data-i18n="tech.techTitle">فناوری‌ها</h3>
+                </div>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 6 4 6 5.5V8h6v1H5c-2 0-3 1.5-3 4s1 4 3 4h2v-2.5c0-2 1.5-3.5 3.5-3.5h5c1.93 0 3.5-1.57 3.5-3.5V5.5C17 4 16.5 2 12 2z"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name">Python</div>
+                            <div class="tech-item-note" data-i18n="tech.python.note">زبان اصلی توسعه</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name">Go</div>
+                            <div class="tech-item-note learning" data-i18n="tech.go.note">در حال یادگیری</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name">HTML & CSS</div>
+                            <div class="tech-item-note" data-i18n="tech.htmlcss.note">ساختار و طراحی وب</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/><polyline points="8 17 12 21 16 17"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name">JavaScript</div>
+                            <div class="tech-item-note" data-i18n="tech.js.note">تعامل و پویایی</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name">Git & GitHub</div>
+                            <div class="tech-item-note" data-i18n="tech.git.note">کنترل نسخه و همکاری</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name" data-i18n="tech.data.name">تحلیل داده</div>
+                            <div class="tech-item-note" data-i18n="tech.data.note">کار با داده و مصورسازی</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="tech-block reveal reveal-delay-1">
+                <div class="tech-block-head">
+                    <div class="tech-block-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3 class="tech-block-title" data-i18n="tech.interestTitle">علایق</h3>
+                </div>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name" data-i18n="tech.ai.name">هوش مصنوعی</div>
+                            <div class="tech-item-note" data-i18n="tech.ai.note">کاوش مفاهیم و آزمایش</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name" data-i18n="tech.markets.name">بازارهای مالی</div>
+                            <div class="tech-item-note" data-i18n="tech.markets.note">تحلیل و یادگیری</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name" data-i18n="tech.iot.name">اینترنت اشیا (IoT)</div>
+                            <div class="tech-item-note" data-i18n="tech.iot.note">اتصال دنیای فیزیکی و دیجیتال</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name" data-i18n="tech.dev.name">توسعه نرم‌افزار</div>
+                            <div class="tech-item-note" data-i18n="tech.dev.note">ساخت محصولات کاربردی</div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11"/><path d="M21 21l-5.5-5.5"/><circle cx="11" cy="11" r="8"/></svg>
+                        </div>
+                        <div class="tech-item-info">
+                            <div class="tech-item-name" data-i18n="tech.innovation.name">فناوری و نوآوری</div>
+                            <div class="tech-item-note" data-i18n="tech.innovation.note">دنبال کردن روند‌های جدید</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     MY PROJECTS
+============================================ -->
+<section class="my-projects-section" id="myProjects">
+    <div class="container">
+        <div class="reveal">
+            <span class="section-eyebrow" data-i18n="myProjects.eyebrow">پروژه‌های من</span>
+            <h2 class="section-title" data-i18n="myProjects.title">پروژه‌ها؛ جایی برای آزمایش و یادگیری</h2>
+            <p class="section-subtitle" data-i18n="myProjects.subtitle">پروژه‌های شخصی برای من فرصتی هستند تا ایده‌ها را آزمایش کنم، مفاهیم جدید یاد بگیرم و تجربه عملی به دست بیاورم. اینجا چند نمونه از آن‌ها را می‌بینید.</p>
+        </div>
+
+        <div class="mini-projects-grid" id="miniProjectsGrid"></div>
+
+        <div class="view-all-wrap reveal">
+            <a href="projects.html" class="btn btn-secondary btn-arrow">
+                <span data-i18n="myProjects.viewAll">مشاهده همه پروژه‌ها</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     FUTURE DIRECTION
+============================================ -->
+<section class="future-section" id="future">
+    <div class="container">
+        <div class="section-header-center reveal">
+            <span class="section-eyebrow" data-i18n="future.eyebrow">مسیر پیش رو</span>
+            <h2 class="section-title" data-i18n="future.title">جاهایی که می‌خواهم به آن‌ها برسم</h2>
+            <p class="section-subtitle" data-i18n="future.subtitle">این‌ها دستاورد نیستند؛ جهت‌هایی هستند که دوست دارم در آن‌ها عمیق‌تر شوم و قدم بردارم.</p>
+        </div>
+
+        <div class="future-grid">
+            <div class="future-item reveal">
+                <div class="future-marker">01</div>
+                <p class="future-text" data-i18n="future.item1">عمیق‌تر شدن در توسعه نرم‌افزار و نوشتن کدی که تمیز، قابل نگهداری و قابل فهم باشد.</p>
+            </div>
+            <div class="future-item reveal reveal-delay-1">
+                <div class="future-marker">02</div>
+                <p class="future-text" data-i18n="future.item2">ادامه یادگیری Go و ساختن پروژه‌های واقعی با آن برای درک بهتر دنیای سیستم‌های مدرن.</p>
+            </div>
+            <div class="future-item reveal reveal-delay-2">
+                <div class="future-marker">03</div>
+                <p class="future-text" data-i18n="future.item3">بررسی کاربردهای هوش مصنوعی در حل مسائل واقعی، نه فقط به‌عنوان یک ترند.</p>
+            </div>
+            <div class="future-item reveal reveal-delay-3">
+                <div class="future-marker">04</div>
+                <p class="future-text" data-i18n="future.item4">تبدیل ایده‌های شخصی به محصولات کاربردی که بتوانند برای دیگران مفید باشند.</p>
+            </div>
+            <div class="future-item reveal">
+                <div class="future-marker">05</div>
+                <p class="future-text" data-i18n="future.item5">یادگیری بیشتر درباره اینترنت اشیا و ترکیب نرم‌افزار با دنیای فیزیکی.</p>
+            </div>
+            <div class="future-item reveal reveal-delay-1">
+                <div class="future-marker">06</div>
+                <p class="future-text" data-i18n="future.item6">کمک به دیگران در مسیر یادگیری، از طریق نوشتن، ساختن و به اشتراک گذاشتن تجربه‌ها.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     PERSONAL PHILOSOPHY
+============================================ -->
+<section class="philosophy-section" id="philosophy">
+    <div class="container">
+        <div class="philosophy-card reveal">
+            <div class="philosophy-content">
+                <div class="philosophy-mark" aria-hidden="true">❝</div>
+                <p class="philosophy-text" data-i18n="philosophy.text">
+                    همیشه راهی برای <span class="accent-word">پیشرفت</span> وجود داره؛ فقط باید دیدگاه متفاوتی داشت. <span class="accent-word">تلاش</span> و <span class="accent-word">پشتکار</span>، کل مسیر رو می‌سازن.
+                </p>
+                <div class="philosophy-divider" aria-hidden="true"></div>
+                <p class="philosophy-translation" data-i18n="philosophy.translation">
+                    There's always a way to move forward; you just need a different perspective. Effort and persistence are what build the path.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     CTA
+============================================ -->
+<section class="contact-preview" id="cta">
+    <div class="container">
+        <div class="contact-card-main reveal">
+            <div class="contact-content">
+                <h2 data-i18n="cta.title">اگر ایده‌ای برای ساختن دارید، خوشحال می‌شوم درباره‌اش صحبت کنیم.</h2>
+                <p data-i18n="cta.desc">چه یک پروژه کوچک باشد، چه یک سؤال ساده درباره برنامه‌نویسی، یا حتی یک گفت‌وگوی دوستانه درباره فناوری — خوشحال می‌شوم از شما بشنوم.</p>
+                <div class="contact-buttons">
+                    <button class="btn btn-primary btn-arrow" onclick="openContactModal()">
+                        <span data-i18n="cta.btn1">شروع یک گفت‌وگو</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                    <a href="projects.html" class="btn btn-secondary">
+                        <span data-i18n="cta.btn2">مشاهده پروژه‌ها</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">MR</span>
+                    <span data-i18n="brand">محمدرضا سلطانی</span>
+                </a>
+                <p data-i18n="footer.brandDesc">توسعه‌دهنده نرم‌افزار و علاقه‌مند به طراحی وب. در مسیر ساخت تجربه‌های دیجیتال کاربردی و حرفه‌ای.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/mohammadreza-atlas" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://t.me/mohammadreza_py" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footer-col-title" data-i18n="footer.nav">ناوبری</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link" data-i18n="nav.home">خانه</a></li>
+                    <li><a href="projects.html" class="footer-link" data-i18n="nav.projects">پروژه‌ها</a></li>
+                    <li><a href="about.html" class="footer-link" data-i18n="nav.about">درباره من</a></li>
+                    <li><a href="services.html" class="footer-link" data-i18n="nav.services">خدمات</a></li>
+                    <li><a href="contact.html" class="footer-link" data-i18n="nav.contact">تماس با من</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-col-title" data-i18n="footer.focus">حوزه فعالیت</h3>
+                <ul class="footer-links">
+                    <li><span class="footer-link" data-i18n="footer.f1">طراحی سایت الیگودرز</span></li>
+                    <li><span class="footer-link" data-i18n="footer.f2">توسعه Python</span></li>
+                    <li><span class="footer-link" data-i18n="footer.f3">طراحی وب‌سایت</span></li>
+                    <li><span class="footer-link" data-i18n="footer.f4">هوش مصنوعی</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-col-title" data-i18n="footer.connect">ارتباط</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/mohammadreza-atlas" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+                    <li><a href="https://t.me/mohammadreza_py" target="_blank" rel="noopener noreferrer" class="footer-link">Telegram</a></li>
+                    <li><button class="footer-link" onclick="openContactModal()" data-i18n="footer.allContacts">همه راه‌های ارتباطی</button></li>
+                    <li><span class="footer-link" data-i18n="footer.location">الیگودرز، ایران</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © <span id="currentYear"></span> <span data-i18n="brand">محمدرضا سلطانی</span>. <span data-i18n="footer.rights">تمامی حقوق محفوظ است.</span>
+            </div>
+            <div class="footer-tagline" data-i18n="footer.tagline">ساخته‌شده با علاقه به یادگیری، خلاقیت و پیشرفت.</div>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================================
+     CONTACT MODAL
+============================================ -->
+<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modalTitle" data-i18n="modal.title">راه‌های ارتباطی</h3>
+            <button class="modal-close" onclick="closeContactModal()" data-i18n-aria="modal.close" aria-label="بستن">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p class="modal-intro" data-i18n="modal.intro">خوشحال می‌شوم از طریق یکی از راه‌های زیر با من در ارتباط باشید. معمولاً ظرف چند ساعت پاسخ می‌دهم.</p>
+
+            <div class="contact-methods-list">
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </div>
+                    <div class="contact-method-info">
+                        <div class="contact-method-label" data-i18n="modal.telegram">تلگرام</div>
+                        <div class="contact-method-value">@mohammadreza_py</div>
+                    </div>
+                    <a href="https://t.me/mohammadreza_py" target="_blank" rel="noopener noreferrer" class="contact-method-action" data-i18n-aria="modal.openLink" aria-label="باز کردن">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                    <button class="contact-method-action" onclick="copyToClipboard('@mohammadreza_py', this)" data-i18n-aria="modal.copy" aria-label="کپی">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    </button>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div class="contact-method-info">
+                        <div class="contact-method-label" data-i18n="modal.email">ایمیل</div>
+                        <div class="contact-method-value">m9215112@gmail.com</div>
+                    </div>
+                    <a href="mailto:m9215112@gmail.com" class="contact-method-action" data-i18n-aria="modal.sendEmail" aria-label="ارسال ایمیل">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </a>
+                    <button class="contact-method-action" onclick="copyToClipboard('m9215112@gmail.com', this)" data-i18n-aria="modal.copy" aria-label="کپی">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    </button>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </div>
+                    <div class="contact-method-info">
+                        <div class="contact-method-label" data-i18n="modal.rubika">روبیکا</div>
+                        <div class="contact-method-value">jumbojimbo</div>
+                    </div>
+                    <a href="https://rubika.ir/jumbojimbo" target="_blank" rel="noopener noreferrer" class="contact-method-action" data-i18n-aria="modal.openLink" aria-label="باز کردن">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                    <button class="contact-method-action" onclick="copyToClipboard('jumbojimbo', this)" data-i18n-aria="modal.copy" aria-label="کپی">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    </button>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="contact-method-info">
+                        <div class="contact-method-label" data-i18n="modal.sms">پیامک</div>
+                        <div class="contact-method-value">09915580367</div>
+                    </div>
+                    <a href="sms:09915580367?body=%D8%B3%D9%84%D8%A7%D9%85%20%D9%88%D9%82%D8%AA%20%D8%A8%D8%AE%DB%8C%D8%B1%D8%8C%20%D8%B3%D9%81%D8%A7%D8%B1%D8%B4%20%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C%20%D8%B3%D8%A7%DB%8C%D8%AA%20%D8%AF%D8%A7%D8%B4%D8%AA%D9%85%20%D9%84%D8%B7%D9%81%D8%A7%20%D8%AA%D9%85%D8%A7%D8%B3%20%D8%A8%DA%AF%DB%8C%D8%B1%DB%8C%D8%AF" class="contact-method-action" data-i18n-aria="modal.sendSms" aria-label="ارسال پیامک">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="modal-footer-text" data-i18n="modal.footer">پاسخ‌گویی معمولاً ظرف چند ساعت انجام می‌شود.</p>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastText">کپی شد</span>
+</div>
+
+<button class="back-to-top" id="backToTop" data-i18n-aria="aria.backToTop" aria-label="بازگشت به بالا">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script>
+/* ============================================================================
+   1) TRANSLATIONS — کلید mr_lang مشترک با Home و Projects
+============================================================================ */
+const translations = {
+    fa: {
+        "brand": "محمدرضا سلطانی",
+        "nav.home": "خانه",
+        "nav.projects": "پروژه‌ها",
+        "nav.about": "درباره من",
+        "nav.services": "خدمات",
+        "nav.contact": "تماس با من",
+        "header.cta": "ارتباط با من",
+
+        "aria.home": "خانه",
+        "aria.backToTop": "بازگشت به بالای صفحه",
+
+        "hero.eyebrow": "مسیر یادگیری و ساختن",
+        "hero.title1": "پشت هر خط کد، ",
+        "hero.titleHighlight": "یک مسیر یادگیری",
+        "hero.title2": " وجود دارد.",
+        "hero.description": "من <strong style='color: var(--white);'>محمدرضا سلطانی</strong> هستم؛ علاقه‌مند به برنامه‌نویسی، فناوری و ساخت راهکارهایی که بتوانند مسائل واقعی را حل کنند. مسیر من در دنیای توسعه نرم‌افزار با کنجکاوی، تجربه کردن و یادگیری مداوم شکل گرفته است.",
+        "hero.btn1": "مشاهده پروژه‌ها",
+        "hero.btn2": "ارتباط با من",
+        "hero.card1.sub": "زبان اصلی",
+        "hero.card2.sub": "در حال یادگیری",
+
+        "story.eyebrow": "داستان من",
+        "story.title": "از کنجکاوی تا ساختن",
+        "story.p1": "مسیر من در دنیای برنامه‌نویسی با یک سؤال ساده شروع شد: <strong>«چطور می‌شود چیزی که در ذهن دارم را به چیزی واقعی تبدیل کنم؟»</strong> از همان لحظه، علاقه‌ام به دنیای فناوری شکل گرفت و کم‌کم فهمیدم که برنامه‌نویسی برای من فقط نوشتن کد نیست؛ بلکه راهی است برای فکر کردن، مسئله را فهمیدن و ساختن چیزی که واقعاً کار کند.",
+        "story.p2": "در این مسیر، تمرکزم را روی <strong>Python</strong> گذاشتم چون زبانی بود که هم قدرتمند بود و هم برای شروع مناسب. در کنار آن، <strong>HTML، CSS و JavaScript</strong> را یاد گرفتم تا بتوانم ایده‌هایم را به شکل وب‌سایت و رابط کاربری پیاده کنم. الان هم در حال یادگیری <strong>Go</strong> هستم، چون دوست دارم دیدم نسبت به برنامه‌نویسی گسترده‌تر شود.",
+        "story.p3": "برای من، مهم‌تر از هر چیز این است که مفاهیم را عمیق بفهمم. کپی کردن کد از اینترنت شاید سریع جواب بدهد، اما تا وقتی منطق پشت آن را نفهمم، احساس می‌کنم چیزی را از دست داده‌ام. به همین دلیل، هر پروژه‌ای که می‌سازم، برایم یک آزمایش است؛ جایی که می‌توانم یاد بگیرم، اشتباه کنم و دوباره بسازم.",
+        "story.quote": "«هدف من این نیست که همه‌چیز را بلد باشم؛ هدفم این است که هر روز کمی بهتر از دیروزم باشم و چیزی بسازم که برای کسی مفید باشد.»",
+
+        "approach.eyebrow": "نگرش من",
+        "approach.title": "چگونه به برنامه‌نویسی نگاه می‌کنم",
+        "approach.subtitle": "چهار اصل ساده که مسیر یادگیری و ساختن من را شکل می‌دهند.",
+        "approach.card1.title": "اول فهمیدن، بعد نوشتن",
+        "approach.card1.desc": "قبل از نوشتن کد، تلاش می‌کنم مسئله و منطق پشت آن را بفهمم. وقتی صورت‌مسئله روشن باشد، راه‌حل خودش کم‌کم پیدا می‌شود.",
+        "approach.card2.title": "یادگیری با ساختن",
+        "approach.card2.desc": "یادگیری زمانی ارزشمندتر می‌شود که بتوانم آن را در یک پروژه واقعی آزمایش کنم. ساختن، بهترین راه برای فهمیدن عمیق مفاهیم است.",
+        "approach.card3.title": "استمرار، مهم‌تر از سرعت",
+        "approach.card3.desc": "پیشرفت حاصل قدم‌های کوچک و استمرار در مسیر است. مهم نیست چقدر آرام حرکت می‌کنم، مهم این است که متوقف نشوم.",
+        "approach.card4.title": "همیشه در حال کشف",
+        "approach.card4.desc": "دنیای فناوری هیچ‌وقت تمام نمی‌شود. همیشه حوزه‌ها و فناوری‌های جدیدی برای یادگیری وجود دارند و من دوست دارم کنجکاوم باقی بماند.",
+
+        "tech.eyebrow": "فناوری‌ها و علایق",
+        "tech.title": "ابزارها و حوزه‌هایی که با آن‌ها کار می‌کنم",
+        "tech.subtitle": "فناوری‌هایی که در پروژه‌هایم استفاده می‌کنم و حوزه‌هایی که به آن‌ها علاقه دارم.",
+        "tech.techTitle": "فناوری‌ها",
+        "tech.interestTitle": "علایق",
+        "tech.python.note": "زبان اصلی توسعه",
+        "tech.go.note": "در حال یادگیری",
+        "tech.htmlcss.note": "ساختار و طراحی وب",
+        "tech.js.note": "تعامل و پویایی",
+        "tech.git.note": "کنترل نسخه و همکاری",
+        "tech.data.name": "تحلیل داده",
+        "tech.data.note": "کار با داده و مصورسازی",
+        "tech.ai.name": "هوش مصنوعی",
+        "tech.ai.note": "کاوش مفاهیم و آزمایش",
+        "tech.markets.name": "بازارهای مالی",
+        "tech.markets.note": "تحلیل و یادگیری",
+        "tech.iot.name": "اینترنت اشیا (IoT)",
+        "tech.iot.note": "اتصال دنیای فیزیکی و دیجیتال",
+        "tech.dev.name": "توسعه نرم‌افزار",
+        "tech.dev.note": "ساخت محصولات کاربردی",
+        "tech.innovation.name": "فناوری و نوآوری",
+        "tech.innovation.note": "دنبال کردن روند‌های جدید",
+
+        "myProjects.eyebrow": "پروژه‌های من",
+        "myProjects.title": "پروژه‌ها؛ جایی برای آزمایش و یادگیری",
+        "myProjects.subtitle": "پروژه‌های شخصی برای من فرصتی هستند تا ایده‌ها را آزمایش کنم، مفاهیم جدید یاد بگیرم و تجربه عملی به دست بیاورم. اینجا چند نمونه از آن‌ها را می‌بینید.",
+        "myProjects.viewAll": "مشاهده همه پروژه‌ها",
+        "myProjects.details": "مشاهده جزئیات",
+        "myProjects.sampleBadge": "نمونه",
+
+        "future.eyebrow": "مسیر پیش رو",
+        "future.title": "جاهایی که می‌خواهم به آن‌ها برسم",
+        "future.subtitle": "این‌ها دستاورد نیستند؛ جهت‌هایی هستند که دوست دارم در آن‌ها عمیق‌تر شوم و قدم بردارم.",
+        "future.item1": "عمیق‌تر شدن در توسعه نرم‌افزار و نوشتن کدی که تمیز، قابل نگهداری و قابل فهم باشد.",
+        "future.item2": "ادامه یادگیری Go و ساختن پروژه‌های واقعی با آن برای درک بهتر دنیای سیستم‌های مدرن.",
+        "future.item3": "بررسی کاربردهای هوش مصنوعی در حل مسائل واقعی، نه فقط به‌عنوان یک ترند.",
+        "future.item4": "تبدیل ایده‌های شخصی به محصولات کاربردی که بتوانند برای دیگران مفید باشند.",
+        "future.item5": "یادگیری بیشتر درباره اینترنت اشیا و ترکیب نرم‌افزار با دنیای فیزیکی.",
+        "future.item6": "کمک به دیگران در مسیر یادگیری، از طریق نوشتن، ساختن و به اشتراک گذاشتن تجربه‌ها.",
+
+        "philosophy.text": "همیشه راهی برای <span class='accent-word'>پیشرفت</span> وجود داره؛ فقط باید دیدگاه متفاوتی داشت. <span class='accent-word'>تلاش</span> و <span class='accent-word'>پشتکار</span>، کل مسیر رو می‌سازن.",
+        "philosophy.translation": "There's always a way to move forward; you just need a different perspective. Effort and persistence are what build the path.",
+
+        "cta.title": "اگر ایده‌ای برای ساختن دارید، خوشحال می‌شوم درباره‌اش صحبت کنیم.",
+        "cta.desc": "چه یک پروژه کوچک باشد، چه یک سؤال ساده درباره برنامه‌نویسی، یا حتی یک گفت‌وگوی دوستانه درباره فناوری — خوشحال می‌شوم از شما بشنوم.",
+        "cta.btn1": "شروع یک گفت‌وگو",
+        "cta.btn2": "مشاهده پروژه‌ها",
+
+        "modal.title": "راه‌های ارتباطی",
+        "modal.intro": "خوشحال می‌شوم از طریق یکی از راه‌های زیر با من در ارتباط باشید. معمولاً ظرف چند ساعت پاسخ می‌دهم.",
+        "modal.telegram": "تلگرام",
+        "modal.email": "ایمیل",
+        "modal.rubika": "روبیکا",
+        "modal.sms": "پیامک",
+        "modal.footer": "پاسخ‌گویی معمولاً ظرف چند ساعت انجام می‌شود.",
+        "modal.close": "بستن پنجره",
+        "modal.copy": "کپی کردن",
+        "modal.openLink": "باز کردن لینک",
+        "modal.sendEmail": "ارسال ایمیل",
+        "modal.sendSms": "ارسال پیامک",
+
+        "toast.copied": "کپی شد",
+
+        "footer.brandDesc": "توسعه‌دهنده نرم‌افزار و علاقه‌مند به طراحی وب. در مسیر ساخت تجربه‌های دیجیتال کاربردی و حرفه‌ای.",
+        "footer.nav": "ناوبری",
+        "footer.focus": "حوزه فعالیت",
+        "footer.f1": "طراحی سایت الیگودرز",
+        "footer.f2": "توسعه Python",
+        "footer.f3": "طراحی وب‌سایت",
+        "footer.f4": "هوش مصنوعی",
+        "footer.connect": "ارتباط",
+        "footer.allContacts": "همه راه‌های ارتباطی",
+        "footer.location": "الیگودرز، ایران",
+        "footer.rights": "تمامی حقوق محفوظ است.",
+        "footer.tagline": "ساخته‌شده با علاقه به یادگیری، خلاقیت و پیشرفت.",
+
+        "seo.title": "درباره محمدرضا سلطانی | توسعه‌دهنده نرم‌افزار",
+        "seo.description": "درباره محمدرضا سلطانی؛ توسعه‌دهنده Python و علاقه‌مند به طراحی وب، هوش مصنوعی، اینترنت اشیا و بازارهای مالی. مسیری از کنجکاوی تا ساختن محصولات واقعی."
+    },
+    en: {
+        "brand": "Mohammadreza Soltani",
+        "nav.home": "Home",
+        "nav.projects": "Projects",
+        "nav.about": "About",
+        "nav.services": "Services",
+        "nav.contact": "Contact",
+        "header.cta": "Contact Me",
+
+        "aria.home": "Home",
+        "aria.backToTop": "Back to top",
+
+        "hero.eyebrow": "A journey of learning and building",
+        "hero.title1": "Behind every line of code, ",
+        "hero.titleHighlight": "there's a journey of learning",
+        "hero.title2": ".",
+        "hero.description": "I'm <strong style='color: var(--white);'>Mohammadreza Soltani</strong>; passionate about programming, technology, and building solutions that solve real problems. My path in software development has been shaped by curiosity, experimentation, and continuous learning.",
+        "hero.btn1": "View Projects",
+        "hero.btn2": "Contact Me",
+        "hero.card1.sub": "Main language",
+        "hero.card2.sub": "Learning",
+
+        "story.eyebrow": "My Story",
+        "story.title": "From curiosity to building",
+        "story.p1": "My path into programming started with a simple question: <strong>\"How can I turn what's in my mind into something real?\"</strong> From that moment, my interest in technology took shape, and I gradually realized that for me, programming isn't just about writing code — it's a way of thinking, understanding problems, and building things that actually work.",
+        "story.p2": "Along the way, I focused on <strong>Python</strong> because it was both powerful and beginner-friendly. Alongside it, I learned <strong>HTML, CSS, and JavaScript</strong> so I could turn my ideas into websites and user interfaces. Right now I'm also learning <strong>Go</strong>, because I want to broaden my view of programming.",
+        "story.p3": "For me, what matters most is deeply understanding concepts. Copying code from the internet might give a quick answer, but until I understand the logic behind it, I feel like I've missed something. That's why every project I build is an experiment for me — a place where I can learn, make mistakes, and build again.",
+        "story.quote": "\"My goal isn't to know everything; my goal is to be a little better than I was yesterday, and to build something useful for someone.\"",
+
+        "approach.eyebrow": "My Approach",
+        "approach.title": "How I look at programming",
+        "approach.subtitle": "Four simple principles that shape my learning and building journey.",
+        "approach.card1.title": "Understand first, then code",
+        "approach.card1.desc": "Before writing code, I try to understand the problem and the logic behind it. When the problem is clear, the solution slowly reveals itself.",
+        "approach.card2.title": "Learn by building",
+        "approach.card2.desc": "Learning becomes more valuable when I can test it in a real project. Building is the best way to deeply understand concepts.",
+        "approach.card3.title": "Consistency over speed",
+        "approach.card3.desc": "Progress comes from small steps and consistency. It doesn't matter how slowly I move; what matters is that I don't stop.",
+        "approach.card4.title": "Always exploring",
+        "approach.card4.desc": "The world of technology never ends. There are always new areas and technologies to learn, and I want to stay curious.",
+
+        "tech.eyebrow": "Technologies & Interests",
+        "tech.title": "Tools and areas I work with",
+        "tech.subtitle": "Technologies I use in my projects and areas I'm interested in.",
+        "tech.techTitle": "Technologies",
+        "tech.interestTitle": "Interests",
+        "tech.python.note": "Main development language",
+        "tech.go.note": "Learning",
+        "tech.htmlcss.note": "Web structure & design",
+        "tech.js.note": "Interaction & dynamics",
+        "tech.git.note": "Version control & collaboration",
+        "tech.data.name": "Data Analysis",
+        "tech.data.note": "Working with data & visualization",
+        "tech.ai.name": "Artificial Intelligence",
+        "tech.ai.note": "Exploring concepts & experiments",
+        "tech.markets.name": "Financial Markets",
+        "tech.markets.note": "Analysis & learning",
+        "tech.iot.name": "Internet of Things (IoT)",
+        "tech.iot.note": "Connecting the physical and digital worlds",
+        "tech.dev.name": "Software Development",
+        "tech.dev.note": "Building practical products",
+        "tech.innovation.name": "Technology & Innovation",
+        "tech.innovation.note": "Following new trends",
+
+        "myProjects.eyebrow": "My Projects",
+        "myProjects.title": "Projects; a place to experiment and learn",
+        "myProjects.subtitle": "Personal projects are a chance for me to test ideas, learn new concepts, and gain hands-on experience. Here are a few examples.",
+        "myProjects.viewAll": "View all projects",
+        "myProjects.details": "View details",
+        "myProjects.sampleBadge": "Sample",
+
+        "future.eyebrow": "The path ahead",
+        "future.title": "Places I want to reach",
+        "future.subtitle": "These aren't achievements; they're directions I'd like to go deeper in.",
+        "future.item1": "Going deeper in software development and writing clean, maintainable, understandable code.",
+        "future.item2": "Continuing to learn Go and building real projects with it to better understand modern systems.",
+        "future.item3": "Exploring how AI can solve real problems, not just following it as a trend.",
+        "future.item4": "Turning personal ideas into practical products that can be useful for others.",
+        "future.item5": "Learning more about IoT and combining software with the physical world.",
+        "future.item6": "Helping others on their learning journey through writing, building, and sharing experiences.",
+
+        "philosophy.text": "There's always a way to <span class='accent-word'>move forward</span>; you just need a different perspective. <span class='accent-word'>Effort</span> and <span class='accent-word'>persistence</span> are what build the path.",
+        "philosophy.translation": "همیشه راهی برای پیشرفت وجود داره؛ فقط باید دیدگاه متفاوتی داشت. تلاش و پشتکار، کل مسیر رو می‌سازن.",
+
+        "cta.title": "If you have an idea to build, I'd love to talk about it.",
+        "cta.desc": "Whether it's a small project, a simple question about programming, or even a friendly chat about technology — I'd be happy to hear from you.",
+        "cta.btn1": "Start a Conversation",
+        "cta.btn2": "View Projects",
+
+        "modal.title": "Contact Methods",
+        "modal.intro": "I'd be happy to connect through any of the following methods. I usually respond within a few hours.",
+        "modal.telegram": "Telegram",
+        "modal.email": "Email",
+        "modal.rubika": "Rubika",
+        "modal.sms": "SMS",
+        "modal.footer": "Responses are usually provided within a few hours.",
+        "modal.close": "Close dialog",
+        "modal.copy": "Copy",
+        "modal.openLink": "Open link",
+        "modal.sendEmail": "Send email",
+        "modal.sendSms": "Send SMS",
+
+        "toast.copied": "Copied",
+
+        "footer.brandDesc": "Software developer passionate about web design. On a path to building practical and professional digital experiences.",
+        "footer.nav": "Navigation",
+        "footer.focus": "Focus Areas",
+        "footer.f1": "Web Design Aligudarz",
+        "footer.f2": "Python Development",
+        "footer.f3": "Website Design",
+        "footer.f4": "Artificial Intelligence",
+        "footer.connect": "Connect",
+        "footer.allContacts": "All Contact Methods",
+        "footer.location": "Aligudarz, Iran",
+        "footer.rights": "All rights reserved.",
+        "footer.tagline": "Built with passion for learning, creativity, and progress.",
+
+        "seo.title": "About Mohammadreza Soltani | Software Developer",
+        "seo.description": "About Mohammadreza Soltani; Python developer interested in web design, AI, IoT, and financial markets. A journey from curiosity to building real products."
+    }
+};
+
+/* ============================================================================
+   2) PROJECTS DATA (همان ساختار projects.html برای هماهنگی)
+============================================================================ */
+const LANGUAGE_COLORS = {
+    "Python": "#3572A5", "Go": "#00ADD8", "HTML": "#e34c26", "CSS": "#563d7c",
+    "JavaScript": "#f1e05a", "Jupyter": "#DA5B0B"
+};
+
+const projectsData = [
+    {
+        id: 'portfolio-website',
+        name: 'Personal Portfolio Website',
+        description: {
+            fa: 'همین وب‌سایتی که در آن هستید؛ یک سایت شخصی دوزبانه که بدون هیچ کتابخانه خارجی ساخته شده است.',
+            en: 'The very website you are browsing: a bilingual personal site built with no external libraries.'
+        },
+        language: 'HTML',
+        githubUrl: 'https://github.com/mohammadreza-atlas',
+        isSample: true
+    },
+    {
+        id: 'python-automation-tools',
+        name: 'Python Automation Tools',
+        description: {
+            fa: 'مجموعه‌ای از اسکریپت‌های پایتون که کارهای تکراری روزمره را خودکار می‌کنند.',
+            en: 'A set of Python scripts that automate repetitive daily tasks.'
+        },
+        language: 'Python',
+        githubUrl: 'https://github.com/mohammadreza-atlas',
+        isSample: true
+    },
+    {
+        id: 'go-learning-path',
+        name: 'Go Learning Path',
+        description: {
+            fa: 'تمرین‌های من در حال یادگیری زبان Go؛ از مفاهیم پایه تا برنامه‌های کوچک.',
+            en: 'My exercises while learning Go, from basics to small programs.'
+        },
+        language: 'Go',
+        githubUrl: 'https://github.com/mohammadreza-atlas',
+        isSample: true
+    },
+    {
+        id: 'data-analysis-experiments',
+        name: 'Data Analysis Experiments',
+        description: {
+            fa: 'آزمایش‌هایی با داده‌های واقعی: پاک‌سازی، بررسی الگوها و رسم نمودار.',
+            en: 'Experiments with real datasets: cleaning, patterns and plotting charts.'
+        },
+        language: 'Python',
+        githubUrl: 'https://github.com/mohammadreza-atlas',
+        isSample: true
+    }
+];
+
+/* ============================================================================
+   3) STATE
+============================================================================ */
+const LANG_KEY = "mr_lang";
+let currentLang = "fa";
+
+try {
+    const saved = localStorage.getItem(LANG_KEY);
+    if (saved === "fa" || saved === "en") currentLang = saved;
+} catch (e) {
+    currentLang = "fa";
+}
+
+function t(key) {
+    const dict = translations[currentLang] || translations.fa;
+    return dict[key] !== undefined ? dict[key] : (translations.fa[key] || key);
+}
+
+function localized(value) {
+    if (value === null || value === undefined) return "";
+    if (typeof value === "string") return value;
+    return value[currentLang] || value.fa || value.en || "";
+}
+
+/* ============================================================================
+   4) LANGUAGE SYSTEM
+============================================================================ */
+function applyLanguage(lang) {
+    currentLang = (lang === "en") ? "en" : "fa";
+    try { localStorage.setItem(LANG_KEY, currentLang); } catch (e) { /* */ }
+
+    const html = document.documentElement;
+    html.setAttribute("lang", currentLang);
+    html.setAttribute("dir", currentLang === "fa" ? "rtl" : "ltr");
+
+    document.title = t("seo.title");
+    setMeta('meta[name="description"]', t("seo.description"));
+    setMeta('meta[name="title"]', t("seo.title"));
+    setMeta('meta[property="og:title"]', t("seo.title"));
+    setMeta('meta[property="og:description"]', t("seo.description"));
+    setMeta('meta[property="og:locale"]', currentLang === "fa" ? "fa_IR" : "en_US");
+    setMeta('meta[name="twitter:title"]', t("seo.title"));
+    setMeta('meta[name="twitter:description"]', t("seo.description"));
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const value = translations[currentLang][key];
+        if (value === undefined) return;
+        // کلیدهایی که HTML داخلی دارند (مثل story.p1 و philosophy.text)
+        if (key.startsWith("story.p") || key === "story.quote" || key === "philosophy.text" || key === "hero.description") {
+            el.innerHTML = value;
+        } else {
+            el.textContent = value;
+        }
+    });
+
+    document.querySelectorAll("[data-i18n-aria]").forEach(el => {
+        const key = el.getAttribute("data-i18n-aria");
+        const value = translations[currentLang][key];
+        if (value !== undefined) el.setAttribute("aria-label", value);
+    });
+
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        const isActive = btn.dataset.lang === currentLang;
+        btn.classList.toggle("active", isActive);
+        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+
+    renderMiniProjects();
+}
+
+function setMeta(selector, content) {
+    const el = document.querySelector(selector);
+    if (el) el.setAttribute("content", content);
+}
+
+document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
+});
+
+/* ============================================================================
+   5) HEADER / MOBILE MENU / BACK TO TOP
+============================================================================ */
+const header = document.getElementById("header");
+const menuToggle = document.getElementById("menuToggle");
+const mobileNav = document.getElementById("mobileNav");
+const backToTop = document.getElementById("backToTop");
+
+function handleHeaderScroll() {
+    header.classList.toggle("scrolled", window.scrollY > 30);
+}
+
+function handleBackToTopVisibility() {
+    backToTop.classList.toggle("visible", window.scrollY > 400);
+}
+
+function toggleMobileMenu(forceClose = false) {
+    const isOpen = mobileNav.classList.contains("open");
+    const shouldClose = forceClose || isOpen;
+    mobileNav.classList.toggle("open", !shouldClose);
+    menuToggle.classList.toggle("open", !shouldClose);
+    menuToggle.setAttribute("aria-expanded", shouldClose ? "false" : "true");
+}
+
+menuToggle.addEventListener("click", () => toggleMobileMenu());
+
+document.querySelectorAll(".mobile-nav-link").forEach(link => {
+    link.addEventListener("click", () => toggleMobileMenu(true));
+});
+
+document.addEventListener("click", (e) => {
+    if (mobileNav.classList.contains("open") &&
+        !mobileNav.contains(e.target) &&
+        !menuToggle.contains(e.target)) {
+        toggleMobileMenu(true);
+    }
+});
+
+window.addEventListener("scroll", () => {
+    handleHeaderScroll();
+    handleBackToTopVisibility();
+}, { passive: true });
+
+backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+/* ============================================================================
+   6) REVEAL ON SCROLL
+============================================================================ */
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: "0px 0px -60px 0px" });
+
+function observeReveal(scope) {
+    (scope || document).querySelectorAll(".reveal:not(.visible)").forEach(el => {
+        revealObserver.observe(el);
+    });
+}
+
+/* ============================================================================
+   7) MINI PROJECTS (هماهنگ با Projects)
+============================================================================ */
+function svgIcon(markup) {
+    const wrap = document.createElement("span");
+    wrap.innerHTML = markup;
+    return wrap.firstElementChild;
+}
+
+const ICONS = {
+    folder: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>',
+    github: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>',
+    arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'
+};
+
+function createMiniProjectCard(project) {
+    const card = document.createElement("article");
+    card.className = "mini-project-card reveal";
+    card.dataset.projectId = project.id;
+
+    const head = document.createElement("div");
+    head.className = "mini-project-head";
+
+    const icon = document.createElement("div");
+    icon.className = "mini-project-icon";
+    icon.appendChild(svgIcon(ICONS.folder));
+
+    const name = document.createElement("h3");
+    name.className = "mini-project-name";
+    name.textContent = project.name;
+
+    head.appendChild(icon);
+    head.appendChild(name);
+
+    const desc = document.createElement("p");
+    desc.className = "mini-project-desc";
+    desc.textContent = localized(project.description);
+
+    const meta = document.createElement("div");
+    meta.className = "mini-project-meta";
+
+    const langEl = document.createElement("span");
+    langEl.className = "mini-project-lang";
+    const dot = document.createElement("span");
+    dot.className = "lang-dot";
+    dot.style.background = LANGUAGE_COLORS[project.language] || "var(--accent)";
+    const langText = document.createElement("span");
+    langText.textContent = project.language;
+    langEl.appendChild(dot);
+    langEl.appendChild(langText);
+
+    const link = document.createElement("a");
+    link.className = "mini-project-link";
+    link.href = project.githubUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", project.name + " — GitHub");
+    link.appendChild(svgIcon(ICONS.github));
+    const linkText = document.createElement("span");
+    linkText.textContent = t("myProjects.details");
+    link.appendChild(linkText);
+
+    meta.appendChild(langEl);
+    meta.appendChild(link);
+
+    card.appendChild(head);
+    card.appendChild(desc);
+    card.appendChild(meta);
+
+    return card;
+}
+
+function renderMiniProjects() {
+    const grid = document.getElementById("miniProjectsGrid");
+    if (!grid) return;
+    grid.textContent = "";
+    projectsData.slice(0, 4).forEach(project => {
+        const card = createMiniProjectCard(project);
+        grid.appendChild(card);
+        revealObserver.observe(card);
+    });
+}
+
+/* ============================================================================
+   8) CONTACT MODAL
+============================================================================ */
+const contactModal = document.getElementById("contactModal");
+let lastFocusedElement = null;
+
+function openContactModal() {
+    lastFocusedElement = document.activeElement;
+    contactModal.classList.add("open");
+    document.body.classList.add("modal-open");
+    if (mobileNav.classList.contains("open")) toggleMobileMenu(true);
+    setTimeout(() => {
+        const focusable = contactModal.querySelector("button, [href]");
+        if (focusable) focusable.focus();
+    }, 100);
+}
+
+function closeContactModal() {
+    contactModal.classList.remove("open");
+    document.body.classList.remove("modal-open");
+    if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+        lastFocusedElement.focus();
+    }
+}
+
+contactModal.addEventListener("click", (e) => {
+    if (e.target === contactModal) closeContactModal();
+});
+
+contactModal.addEventListener("keydown", (e) => {
+    if (e.key !== "Tab") return;
+    const focusables = contactModal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (focusables.length === 0) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    if (contactModal.classList.contains("open")) {
+        closeContactModal();
+        return;
+    }
+    if (mobileNav.classList.contains("open")) {
+        toggleMobileMenu(true);
+        menuToggle.focus();
+    }
+});
+
+window.openContactModal = openContactModal;
+window.closeContactModal = closeContactModal;
+
+/* ============================================================================
+   9) COPY TO CLIPBOARD + TOAST
+============================================================================ */
+const toast = document.getElementById("toast");
+const toastText = document.getElementById("toastText");
+let toastTimeout = null;
+
+function showToast(message) {
+    toastText.textContent = message;
+    toast.classList.add("show");
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
+function handleCopySuccess(buttonElement) {
+    if (buttonElement) {
+        buttonElement.classList.add("copied");
+        setTimeout(() => buttonElement.classList.remove("copied"), 1500);
+    }
+    showToast(t("toast.copied"));
+}
+
+function fallbackCopy(text, buttonElement) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand("copy");
+        handleCopySuccess(buttonElement);
+    } catch (err) {
+        console.warn("Copy is not supported in this browser.");
+    }
+    document.body.removeChild(textarea);
+}
+
+function copyToClipboard(text, buttonElement) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text)
+            .then(() => handleCopySuccess(buttonElement))
+            .catch(() => fallbackCopy(text, buttonElement));
+    } else {
+        fallbackCopy(text, buttonElement);
+    }
+}
+
+window.copyToClipboard = copyToClipboard;
+
+/* ============================================================================
+   10) SMOOTH SCROLL
+============================================================================ */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+        if (!href || href.length < 2) return;
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        const offset = header.offsetHeight + 12;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: "smooth" });
+    });
+});
+
+/* ============================================================================
+   11) INIT
+============================================================================ */
+function init() {
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    applyLanguage(currentLang);
+    handleHeaderScroll();
+    handleBackToTopVisibility();
+    observeReveal(document);
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+} else {
+    init();
+}
+</script>
+
+</body>
+</html>
