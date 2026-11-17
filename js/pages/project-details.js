@@ -4,7 +4,8 @@
 ============================================================================ */
 
 function getRequestedProject() {
-    const id = new URLSearchParams(window.location.search).get("p");
+    // Static project pages (projects/<id>.html) carry the id on <body>; the shell uses ?p=<id>.
+    const id = document.body.dataset.projectId || new URLSearchParams(window.location.search).get("p");
     if (!id) return null;
     return projectsData.find(p => p.id === id) || null;
 }

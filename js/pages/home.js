@@ -110,6 +110,13 @@ function renderProjects() {
 
     const projects = projectsData.filter(p => p.featured).concat(projectsData.filter(p => !p.featured)).slice(0, 4);
 
+    if (!projects.length) {
+        const note = document.createElement("p");
+        note.className = "pg-empty";
+        note.textContent = t("projects.empty");
+        grid.appendChild(note);
+        return;
+    }
     projects.forEach((project, i) => {
         const card = createProjectCard(project);
         card.classList.add(`reveal-delay-${Math.min(i + 1, 4)}`);

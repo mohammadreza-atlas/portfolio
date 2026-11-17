@@ -75,6 +75,11 @@ function createMiniProjectCard(project) {
 
 function renderMiniProjects() {
     const grid = document.getElementById("miniProjectsGrid");
+    if (grid && !projectsData.length) {
+        const section = grid.closest("section");
+        if (section) section.hidden = true;
+        return;
+    }
     if (!grid) return;
     grid.textContent = "";
     projectsData.slice(0, 4).forEach(project => {

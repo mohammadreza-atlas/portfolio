@@ -342,6 +342,14 @@ function createProjectCard(project, index) {
     const title = document.createElement("h3");
     title.className = "project-name";
     title.textContent = project.name;
+    if (project.detailsUrl) {
+        const link = document.createElement("a");
+        link.href = project.detailsUrl;
+        link.className = "project-name-link";
+        link.textContent = project.name;
+        title.textContent = "";
+        title.appendChild(link);
+    }
     body.appendChild(title);
 
     const desc = document.createElement("p");
